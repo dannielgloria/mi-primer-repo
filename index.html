@@ -2,44 +2,68 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Mi primera página</title>
+    <title>Fundamentos de HTML</title>
 
     <!-- Icono de la pestaña -->
     <link rel="icon" href="img/icono.png" type="image/png">
 </head>
 <body>
+    <header>
+        <h1>Fundamentos de HTML</h1>
+        <p>HTML es el lenguaje de marcado utilizado para crear páginas web. Es la base de cualquier sitio web y se utiliza para estructurar el contenido, como texto, imágenes, enlaces y otros elementos multimedia.</p>
+        <nav>
+            <ul>
+                <li><a href="#anatomia">Elementos</a></li>
+                <li><a href="#contenido">Contenido</a></li>
+                <li><a href="#semantico">Semántica</a></li>
+                <li><a href="#contenores">div vs span</a></li>
+                <li><a href="#formularios">Formularios</a></li>
+                <li><a href="#practicas">Buenas prácticas</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="anatomia">
+            <h2>Anatomía de un elemento HTML</h2>
 
-    <h1>Bienvenido a mi página</h1>
+            <p>Un elemento HTML consta de una etiqueta de apertura, contenido y una etiqueta de cierre. Por ejemplo:</p>
+            <strong>
+                <pre><code>&lt;h1&gt;Título principal&lt;/h1&gt;</code></pre>
+            </strong>
+            <p>En este caso, <strong><code>&lt;h1&gt;</code></strong> es la etiqueta de apertura, "Título principal" es el contenido y <code>&lt;/h1&gt;</code> es la etiqueta de cierre.</p>
 
-    <h2>Estas son mis imágenes:</h2>
+            <div class="tip">
+                Los atributos proporcionan información extra.
+                Ejemplo: <strong>class="nota"</strong>
+            </div>
+            <hr>
+        </section>
+        <section id="contenido">
+            <h2>Contenido en HTML</h2>
+            <p>El contenido en HTML puede ser texto, imágenes, enlaces, listas, tablas y otros elementos multimedia. Es importante estructurar el contenido de manera clara y organizada para mejorar la legibilidad y la experiencia del usuario.</p>
+            <h3>Enlaces</h3>
+            <a href="https://www.google.com">Esto es un enlace externo</a>
+            <br>
+            <a href="#anatomia">Esto es un enlace interno</a>
+            <br>
+            <a href="otro.html">Este es un enlace a otro html que esta en la misma carpeta</a>
+            <br>
+            <a href="otro.html#mexico">Este es un enlace a una seccion en otro html en la misma carpeta</a>
 
-    <!-- Primera imagen -->
-    <img src="img/badbunny.jpeg" alt="Foto de bad bunny" width="100">
-
-    <br><br>
-
-    <!-- Segunda imagen -->
-    <img src="https://img.chilango.com/cdn-cgi/image/width=1200,quality=75,format=auto,onerror=redirect/2025/11/Bad-Bunny-ilustracion.jpg" alt="Imagen 2" width="300">
-
-    <br><br>
-
-    <!-- Gif -->
-    <img src="img/homero.webp" alt="Gif de Homero chino" width="200">
-    
-    <br><br>
-    
-    <!-- Video -->
-    <video width="320" height="240" controls>
-        <source src="img/video.mp4" type="video/mp4">
-        Tu navegador no soporta la etiqueta de video.
-    </video> 
-
-    <br><br>
-
-    <!-- Botón que lleva a Google -->
-    <a href="https://www.google.com">
-        <button>Ir a Google</button>
-    </a>
-
+            <h3>Imagen accesible</h3>
+            <img src="./img/homero.webp" alt="Imagen de Homero Simpson" width="200">
+            <h3>Listas</h3>
+            <ol>
+                <li>Primer elemento</li>
+                <li>Segundo elemento</li>
+                <li>Tercer elemento</li>
+            </ol>
+            <ul>
+                <li>Elemento A</li>
+                <li>Elemento B</li>
+                <li>Elemento C</li>
+            </ul>
+        </section>
+    </main>
 </body>
 </html>
